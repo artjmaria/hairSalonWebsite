@@ -2,29 +2,44 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 33.33% 33.33% 33.33%;
-  grid-template-rows: 25% 35% 25% 15%;
+  grid-template-rows: 15% 50% 25% 10%;
+  grid-template-areas: 
+
+  "nav nav nav"
+  "main main main"
+  "content1 content2 content3"
+  "footer footer footer"
+  
+  
+  
 }
 
 nav {
-  background-color: aqua;
+  background-color: rgb(7, 111, 111);
+  grid-area: nav;
 }
 
 main {
   background-color: aquamarine;
+  grid-area: main;
 }
 
 #content1 {
   background-color: lightcoral;
+  grid-area: content1;
 }
 
 #content2 {
   background-color: lightgreen;
+  grid-area: content2;
 }
 
 #content3 {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(240, 183, 130);
+  grid-area: content3;
 }
 
 footer {
   background-color: lightslategray;
+  grid-area: footer;
 }
