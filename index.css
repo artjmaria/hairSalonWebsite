@@ -8,7 +8,9 @@
   "nav nav nav"
   "main main main"
   "content1 content2 content3"
-  "footer footer footer"
+  "footer footer footer";
+
+  grid-gap: 2.75%;
   
   
   
@@ -42,4 +44,21 @@ main {
 footer {
   background-color: lightslategray;
   grid-area: footer;
+}
+
+
+
+
+@media only screen and (max-width: 550px) {
+
+  .container{
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 40% 22% 22% 22% 11%;
+  }
+
+
+
+
+
+
 }
