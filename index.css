@@ -1,3 +1,14 @@
+:root{
+  --main-radius: 5px;
+  --main-padding: 5px;
+
+}
+
+
+
+
+
+
 .container {
   display: grid;
   height: 100vh;
@@ -11,6 +22,11 @@
   "footer footer footer";
 
   grid-gap: 2.75%;
+  font-family: 'Merriweather', serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
   
   
   
@@ -19,31 +35,43 @@
 nav {
   background-color: rgb(7, 111, 111);
   grid-area: nav;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 main {
   background-color: aquamarine;
   grid-area: main;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 #content1 {
   background-color: lightcoral;
   grid-area: content1;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 #content2 {
   background-color: lightgreen;
   grid-area: content2;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 #content3 {
   background-color: rgb(240, 183, 130);
   grid-area: content3;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 footer {
   background-color: lightslategray;
   grid-area: footer;
+  border-radius: var(--main-radius);
+  padding-top: var(--main-padding);
 }
 
 
@@ -54,6 +82,14 @@ footer {
   .container{
     grid-template-columns: 100%;
     grid-template-rows: 15% 40% 22% 22% 22% 11%;
+    grid-template-areas:
+    
+    "nav"
+    "main"
+    "content1"
+    "content2"
+    "content3"
+    "footer";   
   }
 
 
