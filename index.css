@@ -129,10 +129,16 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
+.maintext {
+  color: antiquewhite;
+  font-style: italic;
+  padding-left: 7%;
+
+}
 
 
 
