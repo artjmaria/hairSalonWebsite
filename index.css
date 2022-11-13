@@ -140,28 +140,71 @@ main {
 
 }
 
-
+/* CONTENT 1 STYLING */
 
 #content1 {
   background-color: lightcoral;
   grid-area: content1;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: flex;
+  justify-content: space-around;
+
 }
+.cont1{
+  width: 70%;
+ 
+   
+}
+
+
+
+/* CONTENT 2 STYLING */
 
 #content2 {
   background-color: lightgreen;
   grid-area: content2;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: flex;
+  justify-content: space-around;
+
 }
+
+.cont2{
+  width: 70%;
+}
+
+
+
 
 #content3 {
   background-color: rgb(240, 183, 130);
   grid-area: content3;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  display: flex;
+  justify-content: space-around;
 }
+
+.cont3{
+  width: 70%;
+}
+
+
+.caption {
+align-self: flex-start;
+align-self: center;
+
+
+
+}
+
+
+
+
+
+
 
 footer {
   background-color: lightblue;
