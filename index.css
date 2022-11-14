@@ -14,6 +14,7 @@
 .container {
   display: grid;
   height: 100vh;
+  width: 97vw;
   grid-template-columns: 33.33% 33.33% 33.33%;
   grid-template-rows: 15% 50% 25% 10%;
   grid-template-areas:
@@ -23,7 +24,8 @@
     "content1 content2 content3"
     "footer footer footer";
 
-  grid-gap: 1%;
+  grid-gap: 1.5%;
+  row-gap: 2.5%;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 15px;
@@ -35,27 +37,28 @@
 
 nav {
 
-  width: 300%;
+  width: 312%;
   background-color: lightblue;
 
 }
 
 nav img {
-  width: 140px;
+  width: 185px;
   position: absolute;
-  top: 5px;
-  left: 10%;
+  top: 3px;
+  left: 0.5%;
+
 }
 
 
 nav ul {
   float: right;
-  margin-right: 25px;
+  margin-right: 55px;
 }
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
+  line-height: 120px;
   margin: 0 15px;
 }
 
@@ -123,7 +126,7 @@ main {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./picMain.jpg");
-  min-height: 21em;
+  min-height: 24em;
   height: 50%;
   align-self: center;
   background-repeat: no-repeat;
@@ -146,15 +149,18 @@ main {
   background-color: lightcoral;
   grid-area: content1;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
+ 
 
 }
-.cont1{
-  width: 70%;
- 
-   
+
+.cont1 {
+  width: 75%;
+
+
 }
 
 
@@ -165,123 +171,222 @@ main {
   background-color: lightgreen;
   grid-area: content2;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
 
 }
 
-.cont2{
-  width: 70%;
+.cont2 {
+  width: 75%;
 }
 
 
-
+/* CONTENT 3 STYLING */
 
 #content3 {
   background-color: rgb(240, 183, 130);
   grid-area: content3;
   border-radius: var(--main-radius);
-  padding-top: var(--main-padding);
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
 }
 
-.cont3{
-  width: 70%;
+.cont3 {
+  width: 75%;
 }
 
 
 .caption {
-align-self: flex-start;
-align-self: center;
-
-
+  
+  align-self: center; 
+  text-orientation: upright;
+  writing-mode: horizontal-tb;
 
 }
 
 
 
-
-
-
+/* FOOTER STYLING */
 
 footer {
   background-color: lightblue;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
+  
+  
 }
+
+h3{
+  padding-top: 1%;
+  font-size: 100%;
+  text-align: left;
+  
+  
+  
+}
+
+#facons {
+  text-align: right;
+  
+  
+}
+
+
+
+
+
+
+
+
 
 
 
 /* DESKTOP RESPONSIVE STYLE */
 
-@media (max-width: 10003px) {
+@media (max-width: 1103px) {
 
-  nav img {
-    left: 8%;
+  .cont1 {
+    margin: 0 auto;
+    padding: 10px;
+
+  }
+
+  .cont2 {
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .cont3 {
+    margin: 0 auto;
+    padding: 10px;
   }
 
 
 }
 
+
+
 /* TABLET RESPONSIVE STYLE */
 
-@media (max-width: 1000px) {
+@media (max-width: 914px) {
 
   nav img {
-    left: 6%;
-    top: 7px;
-    width: 110px;
+    left: 1%;
+    /* top: 10px; */
+    /* width: 110px; */
   }
 
   nav ul li a {
     font-size: 17px;
   }
 
+  #image-container {
+
+    background-attachment: scroll;
+
+  }
+
+
+  .cont1 {
+    margin: 0 auto;
+    width: 80%;
+  
+
+  }
+
+  .cont2 {
+    margin: 0 auto;
+    width: 80%;
+    
+  }
+
+  .cont3 {
+    margin: 0 auto;
+    width: 80%;
+    
+  }
 }
 
+
+
+  /* PHONE RESPONSIVE STYLE */
+  @media (max-width: 765px) {
+
+
+    label #btn {
+      display: block;
+    }
+
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: burlywood;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s
+    }
+
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+
+    nav ul li a {
+      font-size: 20px;
+    }
+
+    #check:checked~ul {
+      left: 0;
+    }
+
+    #check:checked~label #btn {
+      display: none;
+    }
+
+    #check:checked~label #cancel {
+      display: block;
+    }
+
+  }
 
 /* PHONE RESPONSIVE STYLE */
-@media (max-width: 767px) {
+@media (max-width: 695px) {
 
+  #image-container {
 
-  label #btn {
-    display: block;
+    background-attachment: scroll;
   }
 
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: burlywood;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s
+  .cont1 {
+    margin: 0 auto;
+    width: 90%;
+    
+  
+
   }
 
-  nav ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
+  .cont2 {
+    margin: 0 auto;
+    width: 90%;
+    
+    
   }
 
-  nav ul li a {
-    font-size: 20px;
-  }
-
-  #check:checked~ul {
-    left: 0;
-  }
-
-  #check:checked~label #btn {
-    display: none;
-  }
-
-  #check:checked~label #cancel {
-    display: block;
+  .cont3 {
+    margin: 0 auto;
+    width: 90%;
+  
+    
   }
 
 }
+
+
