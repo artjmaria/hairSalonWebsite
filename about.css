@@ -8,6 +8,11 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    height: 100%;
   }
 
   .containertwo {
@@ -15,7 +20,7 @@
     height: 100vh;
     width: 97vw;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
+    /* grid-template-rows: 33.33% 33.33% 33.33%; */
     grid-template-areas:
   
       "nav nav nav"
@@ -116,8 +121,11 @@ nav {
     background-color: aquamarine;
     grid-area: main;
     border-radius: var(--main-radius);
-  }
+    display:flex;
+    min-height:100%;
+    flex-direction:column;
 
+  }
 
 
 
