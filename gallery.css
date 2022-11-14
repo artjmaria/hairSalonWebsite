@@ -12,15 +12,19 @@
     list-style: none;
   }
 
+
+
   .containertwo {
     display: grid;
     height: 100vh;
     width: 97vw;
     grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-rows: 15% 20% 30% 20% 15%;
     grid-template-areas:
   
       "nav nav nav"
+      "main main main"
+      "main main main"
       "main main main"
       "footer footer footer";
   
@@ -116,7 +120,38 @@ nav {
     background-color: aquamarine;
     grid-area: main;
     border-radius: var(--main-radius);
+    box-sizing: border-box;
+
   }
+
+  .gallery {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(12rem,0.3fr));
+    grid-auto-rows: 12rem;
+    grid-gap: 0.5rem;
+    
+
+  }
+
+  .gallerygroup {
+    position: relative;
+  
+  }
+
+  .cardone {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+
+
+
+
+
 
 
 
