@@ -117,6 +117,13 @@ nav {
 
 /* MAIN STYLING */
 
+span {
+    font-size: 250%;
+
+    
+    
+}
+
   main {
     background-color: aquamarine;
     grid-area: main;
