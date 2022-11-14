@@ -1,248 +1,50 @@
-
-
-:root {
-    --main-radius: 5px;
-    --main-padding: 5px;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-  }
-
-
-
-  .containertwo {
-    display: grid;
-    height: 100vh;
-    width: 97vw;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    grid-template-rows: 15% 20% 30% 20% 15%;
-    grid-template-areas:
-  
-      "nav nav nav"
-      "main main main"
-      "main main main"
-      "main main main"
-      "footer footer footer";
-  
-    grid-gap: 1.5%;
-    row-gap: 2.5%;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 15px;
-    text-align: center;
-  
-  }
-
-  /* NAVBAR STYLING */
-
-nav {
-    width: 312%;
-    background-color: lightblue;
-  
-  }
-  
-  nav img {
-    width: 185px;
-    position: absolute;
-    top: 3px;
-    left: 0.5%;
-  
-  }
-  
-  
-  nav ul {
-    float: right;
-    margin-right: 55px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-    line-height: 120px;
-    margin: 0 15px;
-  }
-  
-  nav a:hover {
-    color: aqua;
-  }
-  
-  nav ul li a {
-    position: relative;
-    color: white;
-    font-size: 18px;
-    padding: 5px 0;
-    text-transform: uppercase;
-  
-  }
-  
-  nav ul li a:before {
-    position: absolute;
-    content: '';
-    left: 0;
-    bottom: 0;
-    height: 3px;
-    width: 100%;
-    background: white;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform .4s linear;
-  
-  }
-  
-  nav ul li a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  
-  label #btn,
-  label #cancel {
-    color: white;
-    font-size: 30px;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  
-  }
-  
-  #check {
-    display: none;
-  
-  }
-
-/* MAIN STYLING */
-
-  main {
-    background-color: aquamarine;
-    grid-area: main;
-    border-radius: var(--main-radius);
+*{
     box-sizing: border-box;
+}
 
-  }
-
-  .gallery {
+.gridGallery {
+    margin: 30px auto;
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(12rem,0.3fr));
-    grid-auto-rows: 12rem;
-    grid-gap: 0.5rem;
-    
+    width: 1125px;
+    grid-template-columns: 375px 375px 375px;
 
-  }
 
-  .gallerygroup {
-    position: relative;
-  
-  }
 
-  .cardone {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    object-fit: cover;
+}
+.galleryImage{
+    min-width: 355px;
+    min-height: 355px;
+    padding: 10px 10px 61px 10px;
     cursor: pointer;
-  }
+}
+img{
+   width: 80%;
+}
 
+/* DESKTOP RESPONSIVE STYLE */
 
+@media (max-width: 1103px) {
 
-
-
-
-
-
-
-  /* FOOTER STYLING */
-
-  footer {
-    background-color: lightblue;
-    grid-area: footer;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    
-    
-  }
-  
-  h3{
-    padding-top: 1%;
-    font-size: 100%;
-    text-align: left;
-    
-    
-    
-  }
-  
-  #facons {
-    text-align: right;
-    
-    
-  }
-
-
-
-
-
-
-/* TABLET RESPONSIVE STYLE */
-
-@media (max-width: 914px) {
-
-    nav img {
-      left: 1%;
-      /* top: 10px; */
-      /* width: 110px; */
+    .gridGallery{
+        width: 750px;
+        grid-template-columns: 375px 375px;
     }
-  
-    nav ul li a {
-      font-size: 17px;
+
+}
+
+
+/* PHONE RESPONSIVE STYLE */
+@media (max-width: 765px) {
+
+    .gridGallery{
+        width: 375px;
+        grid-template-columns: 375px;
     }
 
 
+}
 
 
-    /* PHONE RESPONSIVE STYLE */
-    @media (max-width: 765px) {
 
-        label #btn {
-          display: block;
-        }
-    
-        ul {
-          position: fixed;
-          width: 100%;
-          height: 100vh;
-          background-color: burlywood;
-          top: 80px;
-          left: -100%;
-          text-align: center;
-          transition: all .5s
-        }
-    
-        nav ul li {
-          display: block;
-          margin: 50px 0;
-          line-height: 30px;
-        }
-    
-        nav ul li a {
-          font-size: 20px;
-        }
-    
-        #check:checked~ul {
-          left: 0;
-        }
-    
-        #check:checked~label #btn {
-          display: none;
-        }
-    
-        #check:checked~label #cancel {
-          display: block;
-        }
-    
-      }
-    }
+
 
