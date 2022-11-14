@@ -121,11 +121,40 @@ nav {
     background-color: aquamarine;
     grid-area: main;
     border-radius: var(--main-radius);
-    display:flex;
-    min-height:100%;
-    flex-direction:column;
+  
 
   }
+
+  .about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+  }
+
+  .about .content{
+    height: auto;
+    width: 580px;
+    max-width: 100%;
+
+
+  }
+
+  #aboutimg{
+    height: auto;
+    width: 580px;
+    max-width: 100%;
+  }
+
+  .text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px; 
+  }
+
+
 
 
 
@@ -161,6 +190,24 @@ nav {
 
 
 
+/* DESKTOP RESPONSIVE STYLE */
+
+@media (max-width: 1057px) {
+
+
+  #aboutimg{
+    height: auto;
+    width: 460px;
+    max-width: 100%;
+  }
+
+
+
+
+
+
+}
+
 /* TABLET RESPONSIVE STYLE */
 
 @media (max-width: 914px) {
@@ -181,6 +228,11 @@ nav {
 
     /* PHONE RESPONSIVE STYLE */
     @media (max-width: 765px) {
+
+        nav img{
+            width: 110px;
+
+        }
 
 
         label #btn {
@@ -222,5 +274,18 @@ nav {
     
       }
     }
+
+    @media (max-width: 480px) {
+        .text{
+            min-height: 100px;
+overflow: hidden;
+
+
+     
+
+
+
+    }
+}
   
   
