@@ -134,7 +134,7 @@ nav {
     padding: 30px;
     display: flex;
     flex-direction: column;
-    background: #888; margin: 0 auto; width: 85%;
+    /* background: #888; margin: 0 auto; width: 85%; */
     
   }
 
@@ -151,29 +151,46 @@ nav {
     padding: 0  10px;
   }
 
-  img{
+
+  #image-one{
+   
     width: 100%;
     height: auto;
     border: none;
     border-radius: 5px;
     margin: 10px;
+    background-image: url("./blogimgOne.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding: 20px;
-
+    /* padding: 70px; */
+   
   }
 
-  .imageone{
-    background-image: url("./blogimgOne.jpg");
-  }
-
-  .imagetwo{
+  #image-two{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
     background-image: url("./blogimgTwo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* padding: 20px; */
 
   }
-  .imagethree{
+  #image-three{
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
     background-image: url("./blogimgThree.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* padding: 20px; */
 
   }
 
@@ -288,47 +305,8 @@ footer {
       background-attachment: scroll;
   
     }
-}  
+} 
 
-
-/* Tablet View */
-@media (max-width: 700px) {  
-    .blogs{
-      padding: 40px;  
-    }
-    
-    .blog{
-      width: 100%;
-      height: auto;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    .image{
-      width: 100%;
-      height: 200px;
-      margin: 10px auto;
-    }
-    
-    .texts{
-      width: 100%;
-      height: 350px;
-      margin: 5px auto;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    
-    .texts a{
-      position: absolute;
-      bottom: 10px;
-      text-decoration: none;
-      color: #0B2231;
-    }
-  
-  }
-
-
-/* PHONE RESPONSIVE STYLE */
 @media (max-width: 765px) {
 
     .gridGallery {
@@ -376,6 +354,63 @@ footer {
 
 
 }
+
+
+/* Tablet View */
+@media (max-width: 700px) {  
+    .blogs{
+      padding: 40px;  
+    }
+    
+    .blog{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    
+
+    #image-one{
+        padding: 80px;
+        width: 100%;
+        height: 200px;
+        margin: 10px auto;
+    }
+    #image-two{
+        padding: 80px;
+        width: 100%;
+        height: 200px;
+        margin: 10px auto;
+    }
+    #image-three{
+        padding: 80px;
+        width: 100%;
+        height: 200px;
+        margin: 10px auto;
+    }
+
+
+    
+    .texts{
+      width: 100%;
+      height: 350px;
+      margin: 5px auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .texts a{
+      position: absolute;
+      bottom: 10px;
+      text-decoration: none;
+      color: #0B2231;
+    }
+  
+  }
+
+
+
+
   
   /* Mobile View */
   @media (max-width: 400px) {
@@ -388,7 +423,9 @@ footer {
       width: 100%;
     }
     
-    .image{
+    .imageone
+    .imagetwo
+    .imagethree{
       width: 100%;
       height: 200px;
       margin: 5px auto;
