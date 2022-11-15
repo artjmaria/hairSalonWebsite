@@ -26,7 +26,6 @@
       "footer footer footer";
   
     grid-gap: 1.5%;
-    row-gap: 2.5%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 15px;
@@ -41,7 +40,7 @@
 
 nav {
     grid-area: nav;
-    width: 100%;
+    width: 107%;
     background-color: lightblue;
   
   }
@@ -132,10 +131,12 @@ nav {
     display: grid;
     width: 1125px;
     grid-template-columns: 375px 375px 375px;
+    grid-gap: 12%;
+    padding-bottom: 3%;
 
 }
 
-.galleryImage {
+.galleryImage{
     min-width: 355px;
     min-height: 355px;
     padding: 10px 10px 61px 10px;
@@ -143,9 +144,13 @@ nav {
 
 }
 
-img {
+
+img:hover {
     width: 100%;
+    
+   
 }
+
 
 
 /* FOOTER STYLING */
@@ -155,7 +160,7 @@ footer {
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
-    
+    width: 107%
     
   }
   
