@@ -134,6 +134,8 @@ nav {
     padding: 30px;
     display: flex;
     flex-direction: column;
+    background: #888; margin: 0 auto; width: 85%;
+    
   }
 
   .blog{
@@ -149,17 +151,30 @@ nav {
     padding: 0  10px;
   }
 
-  .image{
+  img{
     width: 100%;
     height: auto;
     border: none;
     border-radius: 5px;
     margin: 10px;
-    background-image: url("./blogimgOne.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-  /*   padding: 20px; */
+    padding: 20px;
+
+  }
+
+  .imageone{
+    background-image: url("./blogimgOne.jpg");
+  }
+
+  .imagetwo{
+    background-image: url("./blogimgTwo.jpg");
+
+  }
+  .imagethree{
+    background-image: url("./blogimgThree.jpg");
+
   }
 
   .texts{
@@ -234,18 +249,6 @@ footer {
     
     
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
