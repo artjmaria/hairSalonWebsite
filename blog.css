@@ -121,10 +121,6 @@ nav {
 
 
 
-
-
-
-
 /* BLOG SECTIONS STYLING */
 
 .blogs{
@@ -276,15 +272,7 @@ footer {
 
 
 
-/* DESKTOP RESPONSIVE STYLE */
-@media (max-width: 1103px) {
 
-    .gridGallery {
-        width: 750px;
-        grid-template-columns: 375px 375px;
-    }
-
-}
 
 /* TABLET RESPONSIVE STYLE */
 

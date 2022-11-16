@@ -1,0 +1,212 @@
+
+:root {
+    --main-radius: 5px;
+    --main-padding: 5px;
+  }
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    
+    
+}
+
+
+.container {
+    display: grid;
+    width: 97vw;
+    grid-template-areas:
+  
+      "nav nav nav"
+      "main main main"
+      "content1 content2 content3"
+      "footer footer footer";
+  
+    grid-gap: 1.5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+  
+  }
+
+
+
+  /* NAVBAR STYLING */
+
+nav {
+    grid-area: nav;
+    width: 107%;
+    background-color: lightblue;
+  
+  }
+  
+  nav img {
+    width: 185px;
+    position: absolute;
+    top: 3px;
+    left: 0.5%;
+  
+  }
+  
+  
+  nav ul {
+    float: right;
+    margin-right: 55px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 120px;
+    margin: 0 15px;
+  }
+  
+  nav a:hover {
+    color: aqua;
+  }
+  
+  nav ul li a {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    padding: 5px 0;
+    text-transform: uppercase;
+  
+  }
+  
+  nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+  
+  }
+  
+  nav ul li a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  label #btn,
+  label #cancel {
+    color: white;
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  
+  }
+  
+  #check {
+    display: none;
+  
+  }
+
+
+
+
+
+  /* FOOTER STYLING */
+
+footer {
+    background-color: lightblue;
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    width: 107%
+    
+  }
+  
+  h3{
+    padding-top: 1%;
+    font-size: 100%;
+    text-align: left;
+    
+    
+    
+  }
+  
+  #facons {
+    text-align: right;
+    
+    
+  }
+
+
+
+
+
+
+
+  /* TABLET RESPONSIVE STYLE */
+
+@media (max-width: 914px) {
+
+    nav img {
+      left: 1%;
+      /* top: 10px; */
+      /* width: 110px; */
+    }
+  
+    nav ul li a {
+      font-size: 17px;
+    }
+  
+} 
+
+
+
+@media (max-width: 765px) {
+
+
+    label #btn {
+        display: block;
+      }
+  
+      ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: burlywood;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s
+      }
+  
+      nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+      }
+  
+      nav ul li a {
+        font-size: 20px;
+      }
+  
+      #check:checked~ul {
+        left: 0;
+      }
+  
+      #check:checked~label #btn {
+        display: none;
+      }
+  
+      #check:checked~label #cancel {
+        display: block;
+      }
+
+
+}
