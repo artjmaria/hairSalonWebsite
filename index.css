@@ -120,7 +120,7 @@ label #cancel {
 /* MAIN STYLING */
 
 main {
-  background-color: aquamarine;
+  background-color:  black;
   grid-area: main;
   border-radius: var(--main-radius);
 }
@@ -150,7 +150,7 @@ main {
 /* CONTENT 1 STYLING */
 
 #content1 {
-  background-color: #D59C33;
+  background-color:  #e5b31f;
   grid-area: content1;
   border-radius: var(--main-radius);
   display: flex;
@@ -172,7 +172,7 @@ main {
 /* CONTENT 2 STYLING */
 
 #content2 {
-  background-color: #D59C33;
+  background-color:  #e5b31f;
   grid-area: content2;
   border-radius: var(--main-radius);
   display: flex;
@@ -190,7 +190,7 @@ main {
 /* CONTENT 3 STYLING */
 
 #content3 {
-  background-color: #D59C33;
+  background-color:  #e5b31f;
   grid-area: content3;
   border-radius: var(--main-radius);
   display: flex;
