@@ -10,6 +10,9 @@
     list-style: none;
     box-sizing: border-box;
   }
+  body {
+    background-color: #0D0D0D;
+  }
 
   body {
     height: 100%;
@@ -41,7 +44,7 @@
 
 nav {
     width: 312%;
-    background-color: lightblue;
+    background-color: #0D0D0D;
   
   }
   
@@ -66,7 +69,7 @@ nav {
   }
   
   nav a:hover {
-    color: aqua;
+    color: #D59C33;
   }
   
   nav ul li a {
@@ -119,7 +122,7 @@ nav {
 
 
   main {
-    background-color: aquamarine;
+    background-color:  #0D0D0D;
     grid-area: main;
     border-radius: var(--main-radius);
   
@@ -211,15 +214,15 @@ textarea{
 textarea:focus,
 input:focus{
     outline: none;
-    border-color: #6f6df4;
+    border-color: #D59C33;
 }
 button{
     border: none;
     padding: 10px 20px;
     background: linear-gradient(
         130deg,
-        #6f6df4,
-        #4c46f5
+        #D59C33,
+        #111113
     );
     color: #ffffff;
     border-radius: 3px;
@@ -235,7 +238,7 @@ button{
   /* FOOTER STYLING */
 
   footer {
-    background-color: lightblue;
+    background-color: #0D0D0D;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -247,6 +250,7 @@ button{
     padding-top: 1%;
     font-size: 100%;
     text-align: left;
+    color: white;
     
     
     
@@ -254,6 +258,7 @@ button{
   
   #facons {
     text-align: right;
+    color: white;
     
     
   }
