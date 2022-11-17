@@ -9,6 +9,9 @@
   text-decoration: none;
   list-style: none;
 }
+body {
+  background-color: #0C0C0C;
+}
 
 
 .container {
@@ -38,7 +41,7 @@
 nav {
 
   width: 312%;
-  background-color: lightblue;
+  background-color: #0C0C0C;
 
 }
 
@@ -213,7 +216,7 @@ main {
 /* FOOTER STYLING */
 
 footer {
-  background-color: lightblue;
+  background-color: #0C0C0C;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -222,6 +225,7 @@ footer {
 }
 
 h3{
+  color: white;
   padding-top: 1%;
   font-size: 100%;
   text-align: left;
@@ -232,6 +236,7 @@ h3{
 
 #facons {
   text-align: right;
+  color: white;
   
   
 }
