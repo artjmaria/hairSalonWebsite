@@ -10,7 +10,7 @@
   list-style: none;
 }
 body {
-  background-color: #0C0C0C;
+  background-color: #0D0D0D;
 }
 
 
@@ -41,7 +41,7 @@ body {
 nav {
 
   width: 312%;
-  background-color: #0C0C0C;
+  background-color: #0D0D0D;
 
 }
 
@@ -66,7 +66,7 @@ nav ul li {
 }
 
 nav a:hover {
-  color: aqua;
+  color: #D59C33;
 }
 
 nav ul li a {
@@ -143,13 +143,14 @@ main {
   color: antiquewhite;
   font-style: italic;
   padding-left: 7%;
+  font-size: 140%;
 
 }
 
 /* CONTENT 1 STYLING */
 
 #content1 {
-  background-color: lightcoral;
+  background-color: #D59C33;
   grid-area: content1;
   border-radius: var(--main-radius);
   display: flex;
@@ -171,7 +172,7 @@ main {
 /* CONTENT 2 STYLING */
 
 #content2 {
-  background-color: lightgreen;
+  background-color: #D59C33;
   grid-area: content2;
   border-radius: var(--main-radius);
   display: flex;
@@ -189,7 +190,7 @@ main {
 /* CONTENT 3 STYLING */
 
 #content3 {
-  background-color: rgb(240, 183, 130);
+  background-color: #D59C33;
   grid-area: content3;
   border-radius: var(--main-radius);
   display: flex;
@@ -216,7 +217,7 @@ main {
 /* FOOTER STYLING */
 
 footer {
-  background-color: #0C0C0C;
+  background-color: #0D0D0D;
   grid-area: footer;
   border-radius: var(--main-radius);
   padding-top: var(--main-padding);
@@ -367,6 +368,100 @@ h3{
 
   #image-container {
 
+    background-attachment: scroll;
+  }
+
+  .cont1 {
+    margin: 0 auto;
+    width: 90%;
+    
+  
+
+  }
+
+  .cont2 {
+    margin: 0 auto;
+    width: 90%;
+    
+    
+  }
+
+  .cont3 {
+    margin: 0 auto;
+    width: 90%;
+  
+    
+  }
+
+}
+
+/* PHONE RESPONSIVE STYLE */
+@media (max-width: 529px) {
+
+  #image-container {
+
+    background-attachment: scroll;
+  }
+
+  .cont1 {
+    margin: 0 auto;
+    width: 90%;
+    
+  
+
+  }
+
+  .cont2 {
+    margin: 0 auto;
+    width: 90%;
+    
+    
+  }
+
+  .cont3 {
+    margin: 0 auto;
+    width: 90%;
+  
+    
+  }
+
+}
+
+@media (max-width: 486px) {
+
+  #image-container {
+    min-height: 14em;
+    background-attachment: scroll;
+  }
+
+  .cont1 {
+    margin: 0 auto;
+    width: 90%;
+    
+  
+
+  }
+
+  .cont2 {
+    margin: 0 auto;
+    width: 90%;
+    
+    
+  }
+
+  .cont3 {
+    margin: 0 auto;
+    width: 90%;
+  
+    
+  }
+
+}
+
+@media (max-width: 310px) {
+
+  #image-container {
+    min-height: 14em;
     background-attachment: scroll;
   }
 
