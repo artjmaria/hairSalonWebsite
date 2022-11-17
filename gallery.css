@@ -13,11 +13,14 @@
     text-decoration: none;
     list-style: none;
 }
+body {
+  background-color: #0D0D0D;
+}
 
 
 .container {
     display: grid;
-    width: 97vw;
+    width: 90vw;
     grid-template-areas:
   
       "nav nav nav"
@@ -41,7 +44,7 @@
 nav {
     grid-area: nav;
     width: 107%;
-    background-color: lightblue;
+    background-color: #0D0D0D;
   
   }
   
@@ -66,7 +69,7 @@ nav {
   }
   
   nav a:hover {
-    color: aqua;
+    color: #D59C33;
   }
   
   nav ul li a {
@@ -129,34 +132,36 @@ nav {
 .gridGallery {
     margin: 30px auto;
     display: grid;
-    width: 1125px;
+    width: 1110px;
     grid-template-columns: 375px 375px 375px;
-    grid-gap: 12%;
-    padding-bottom: 3%;
+    grid-gap: 7%;
+    padding-bottom: 13%;
+    
 
 }
 
 .galleryImage{
     min-width: 355px;
     min-height: 355px;
-    padding: 10px 10px 61px 10px;
+    /* padding: 10px 10px 61px 10px; */
     cursor: pointer;
+    padding-left: 50%;
 
 }
 
 
-img:hover {
-    width: 100%;
+.pic:hover{
+  box-shadow: 0 20px 20px rgba(244, 220, 82, 0.3);
     
-   
 }
+
 
 
 
 /* FOOTER STYLING */
 
 footer {
-    background-color: lightblue;
+    background-color: #0D0D0D;
     grid-area: footer;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
@@ -165,6 +170,7 @@ footer {
   }
   
   h3{
+    color: white;
     padding-top: 1%;
     font-size: 100%;
     text-align: left;
@@ -175,6 +181,7 @@ footer {
   
   #facons {
     text-align: right;
+    color: white;
     
     
   }
@@ -185,22 +192,21 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* DESKTOP RESPONSIVE STYLE */
+
+@media (max-width: 1190px) {
+
+    .gridGallery {
+        width: 750px;
+        grid-template-columns: 375px 375px;
+    }
+
+}
+
+
+
+
+
 
 @media (max-width: 1103px) {
 
@@ -210,6 +216,7 @@ footer {
     }
 
 }
+
 
 
 
@@ -238,10 +245,7 @@ footer {
 /* PHONE RESPONSIVE STYLE */
 @media (max-width: 765px) {
 
-    .gridGallery {
-        width: 375px;
-        grid-template-columns: 375px;
-    }
+
 
 
     label #btn {
@@ -284,5 +288,30 @@ footer {
 
 }
 
+@media (max-width: 490px) {
+.gridGallery {
+  width: 375px;
+  grid-template-columns: 375px;
+}
+.galleryImage{
+  min-height: 5px;
+  width: 50px;
+
+  cursor: pointer;
+  padding-left: 10%;
+  
+}
+footer{
+  padding-top: 20%;
+}
+}
+
+@media (max-width: 491px) {
+
+  footer{
+    width: 120%;
+    /* padding-top: 20%; */
+  }
+  }
 
 
