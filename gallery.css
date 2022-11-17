@@ -149,6 +149,11 @@ nav {
 
 }
 
+img.pic {
+  padding-left: 15%;
+
+}
+
 
 .pic:hover{
   box-shadow: 0 20px 20px rgba(244, 220, 82, 0.3);
